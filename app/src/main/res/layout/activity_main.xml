@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.android.saveanimals.MainActivity">
+
+
+
+
+
+    <ImageView
+        android:id="@+id/elephant"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:src="@drawable/cat"
+        android:scaleType="fitXY"
+
+
+        />
+    <TextView
+        android:id="@+id/txtview"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#78909C"
+        android:drawableBottom="@mipmap/ic_pets_black_24dp"
+        />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/elephant"
+        android:text="All About Animals               "
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:background="#CFD8DC"
+        android:gravity="left"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:layout_marginRight="60dp"/>
+
+    <ImageView
+        android:id="@+id/locationimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:src="@mipmap/ic_location_on_black_24dp"
+        android:layout_below="@+id/information"
+        />
+
+    <TextView
+        android:id="@+id/addr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/information"
+        android:layout_toRightOf="@+id/locationimg"
+        android:text="2 Allandale Dr Apt B15 DE 19713"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/addr"/>
+
+    <ImageView
+        android:id="@+id/box"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:src="@mipmap/ic_local_phone_black_24dp"
+        android:layout_below="@+id/locationimg"
+        />
+
+
+    <TextView
+        android:id="@+id/abtpet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addr"
+        android:layout_toRightOf="@+id/box"
+        android:text="800-728-3738"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#c0c0c0"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/abtpet"/>
+
+
+
+    <TextView
+        android:id="@+id/Descrip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/abtpet"
+        android:layout_toRightOf="@+id/box"
+        android:text="Know that the same spark of life that is with in you is within all our animal friends, the desire to live is the same within all of us…"
+        android:textStyle="bold"
+        android:textColor="#212121"
+        android:gravity="left"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"/>
+
+
+
+</RelativeLayout>
